@@ -9,7 +9,7 @@ public class NoteWebConfiguration implements WebMvcConfigurer{
     @Override
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/api/notes/**")
-        .allowedOrigins("https://note-app-kappa-flax.vercel.app")
+        .allowedOrigins("http://localhost:5173","http://192.168.1.26:5173")
 
         .allowedMethods("GET","POST","PUT","DELETE");
     }
